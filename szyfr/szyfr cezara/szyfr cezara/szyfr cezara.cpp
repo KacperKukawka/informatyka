@@ -19,8 +19,12 @@ int main()
 	cout << "podaj wyraz: ";
 	cin >> tab;
 
-	
-}
+	funkcja(tab, klucz);
+	cout << tab << endl;
+
+	funkcja(tab, -klucz);
+	cout << tab << endl;
+}  
 
 	void funkcja(char tab[], int klucz) {
 
@@ -31,26 +35,28 @@ int main()
 				return;
 			}
 			if (klucz >= 0) {			//k3
-	
-				for(int i = 0; i < 10; i++){
-					i < dl					//k4
-				}	
-				
-				if tab + klucz <= z{		//k5
-					 tab += klucz
-					else {
-						tab < tab + klucz -26
-					}
-				
-				}
-				else{
-					if klucz >= 0, {			
 
-				i < dl					
-				if tab + klucz <= z{
-					 tab += klucz
+				for (int i = 0; i < dl; i++) {
+
+					if (tab[i] + klucz <= 'z') {		//k5
+						tab[i] += klucz;
+					}
 					else {
-						tab < tab + klucz - 26
+						tab[i] = tab[i] + klucz - 26;
+					}
+
+
+				}
+			}
+			else{           //k6
+					for (int i = 0; i < dl; i++) {
+						
+					
+						if (tab[i] + klucz >= 'a') {
+							tab[i] += klucz;
+						}
+					else {
+					tab[i] = tab[i] + klucz + 26;
 					}
 
 				}
