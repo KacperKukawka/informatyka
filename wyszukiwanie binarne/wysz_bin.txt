@@ -1,0 +1,31 @@
+Funcja algorytmu wyszukiwania binarnego
+Wejście:
+szukana - poszukiwana liczba
+tab[15] - tablica z posortowanymi wartościami (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47)
+
+Wyjście:
+pozycja - indeks (pozycja) tablicy na której znajduje się poszukiwana wartość
+
+Zmienne pomocnicze:
+l − przechowuje indeks lewego krańca tablicy,
+p − przechowuje indeks prawego krańca tablicy,
+sr − przechowuje indeks środkowego elementu tablicy
+
+Lista kroków:
+K1:   l ← 0  
+K2:   p ← 15  
+K3:   sr ← (l+p)/2  
+K4:   Dopóki l <= p  
+      wykonuj kroki od K5 do K7
+K5:   Jeśli tab[sr] = szukana  
+      zwróć sr
+K6:   Jeśli tab[sr] > szukana  
+      to p ← sr - 1
+      inaczej l ← sr + 1
+K7:   sr ← (l+p)/2  
+K8:   zwróć -1  
+
+Wynik działania programu:
+
+Podaj liczbe ktora chcesz znalezc: 29
+Liczba 29 wystepuje w zbiorze w komorce o indeksie 9
